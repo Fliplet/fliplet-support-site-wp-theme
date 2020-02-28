@@ -1,2 +1,2 @@
-# fliplet-support-site-wp-theme
+# Fliplet Support WordPress Theme
 A WordPress theme for Fliplet's support site
