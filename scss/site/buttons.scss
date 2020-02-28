@@ -1,0 +1,47 @@
+.btn {
+  padding: .65rem 1rem;
+  border-radius: .5rem;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -1px rgba(0,0,0,.06) !important;
+  line-height: 1.25;
+  font-weight: 600;
+  outline: none !important;
+}
+
+.btn-default {
+  @include button-variant($btn-default-color, $btn-default-bg, $btn-default-color);
+}
+.btn-primary {
+  @include button-variant($btn-primary-color, $btn-primary-bg);
+}
+.btn-success {
+  @include button-variant($btn-success-color, $btn-success-bg);
+}
+.btn-info {
+  @include button-variant($btn-info-color, $btn-info-bg);
+}
+.btn-warning {
+  @include button-variant($btn-warning-color, $btn-warning-bg);
+}
+.btn-danger {
+  @include button-variant($btn-danger-color, $btn-danger-bg);
+}
+
+a,
+.btn-link {
+  color: $btn-primary-bg;
+  text-decoration: none;
+}
+
+a {
+  &:hover,
+  &:active:hover {
+    color: darken($btn-primary-bg, 10%);
+    text-decoration: none;
+  }
+
+  &:focus,
+  &:active:focus {
+    color: $btn-primary-bg;
+    text-decoration: none;
+  }
+}

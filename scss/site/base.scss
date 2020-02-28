@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700|Open+Sans:300,400,600,700&display=swap');
+
+html {
+  height: 100%;
+  overflow: hidden;
+
+  &.admin-bar {
+    height: calc(100% - 32px);
+
+    @include below(782px) {
+      height: calc(100% - 46px);
+    }
+  }
+}
+
+body {
+  margin-top: $navbar-height;
+  height: calc(100% - #{$navbar-height});
+  overflow: auto;
+  font-family: 'Muli', sans-serif;
+  color: $text-color;
+  font-weight: 400;
+  background-color: $light-bg-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $primary-dark-color;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 38px;
+  font-family: 'Open sans', sans-serif;
+}
+
+h2 {
+  font-size: 26px;
+  font-family: 'Open sans', sans-serif;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: 'Open sans', sans-serif;
+}
+
+h4 {
+  font-size: 16px;
+  font-family: 'Muli', sans-serif;
+}
+
+h5 {
+  font-size: 16px;
+  font-family: 'Muli', sans-serif;
+}
+
+h6 {
+  font-size: 16px;
+  font-family: 'Muli', sans-serif;
+}

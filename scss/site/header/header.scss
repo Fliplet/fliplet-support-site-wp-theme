@@ -1,0 +1,183 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $dark-bg-color;
+  width: 100%;
+  height: $navbar-height;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 0 15px;
+
+  .navbar-brand {
+    padding: 0;
+
+    img {
+      max-height: $navbar-height;
+      padding: 10px 0;
+    }
+  }
+
+  .navbar-toggler {
+    padding: 0;
+    outline: none;
+    width: $navbar-height;
+    height: $navbar-height;
+    padding: 10px 15px 10px 0;
+    margin-right: -15px;
+
+    .navbar-hamburger {
+      width: 100%;
+      height: 100%;
+      position: relative;
+
+      span {
+        position: absolute;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 3px;
+        background: #fff;
+        opacity: 1;
+
+        @include transition(0.2s ease-in-out);
+
+        &:nth-child(1) {
+          top: 4px;
+        }
+
+        &:nth-child(2) {
+          width: $navbar-height / 2;
+          top: 12px;
+          transform-origin: left center;
+        }
+
+        &:nth-child(3) {
+          top: 20px;
+        }
+      }
+    }
+
+    &[aria-expanded="false"] {
+      span {
+        @include transform(rotate(0deg));
+      }
+    }
+
+    &[aria-expanded="true"] {
+      span {
+        &:nth-child(1) {
+          top: 13px;
+
+          @include transform(rotate(45deg));
+        }
+
+        &:nth-child(2) {
+          width: 0%;
+          opacity: 0;
+        }
+
+        &:nth-child(3) {
+          top: 13px;
+
+          @include transform(rotate(-45deg));
+        }
+      }
+    }
+  }
+
+  .navbar-collapse {
+    flex-grow: unset;
+
+    @include below(992px) {
+      display: none;
+    }
+
+    .navbar-nav {
+      margin-right: -15px;
+
+      .nav-item {
+        .nav-link {
+          color: #ffffff;
+          padding: 0 15px;
+          text-transform: uppercase;
+          font-size: 13px;
+
+          @include transition(color 0.2s ease-in-out);
+
+          &:hover {
+            color: $primary-color;
+          }
+        }
+
+        &.active {
+          .nav-link{
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+#navbar-mobile {
+  position: fixed;
+  top: $navbar-height;
+  z-index: 1000;
+  right: -100%;
+  width: 100%;
+  height: calc(100vh - #{$navbar-height});
+  padding: 5vw 10vw 0;
+  background-color: $dark-bg-color;
+
+  @include transition(right 0.15s ease-in-out);
+
+  @include above(991px) {
+    display: none;
+  }
+
+  &.show {
+    right: 0;
+  }
+
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: $light-grey;
+        font-size: calc(2vw + 12px);
+
+        &:hover {
+          color: #ffffff;
+        }
+      }
+
+      &.active {
+        .nav-link{
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+.admin-bar {
+  .navbar {
+    top: 32px;
+
+    @include below(782px) {
+      top: 46px;
+    }
+  }
+
+  #navbar-mobile {
+    /* Account for the WP admin bar */
+    top: $navbar-height + 32px;
+    height: calc(100vh - #{$navbar-height} - 32px);
+
+    @include below(782px) {
+      top: $navbar-height + 46px;
+      height: calc(100vh - #{$navbar-height} - 46px);
+    }
+  }
+}

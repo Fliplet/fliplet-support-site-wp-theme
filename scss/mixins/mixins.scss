@@ -1,0 +1,196 @@
+@mixin below ($breakpoint) {
+  @media only screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin below-height ($breakpoint) {
+  @media only screen and (max-height: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin above ($breakpoint) {
+  @media only screen and (min-width: $breakpoint+1) {
+    @content;
+  }
+}
+
+@mixin above-height ($breakpoint) {
+  @media only screen and (min-height: $breakpoint+1) {
+    @content;
+  }
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin transform($args...) {
+  -webkit-transform: $args;
+  -moz-transform: $args;
+  -ms-transform: $args;
+  -o-transform: $args;
+  transform: $args;
+}
+
+@mixin filter($args...) {
+  -webkit-filter: $args;
+  -moz-filter: $args;
+  -ms-filter: $args;
+  -o-filter: $args;
+  filter: $args;
+}
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+
+@mixin animation-duration($duration) {
+  -webkit-animation-duration: #{$duration};
+  -moz-animation-duration: #{$duration};
+  -ms-animation-duration: #{$duration};
+  -o-animation-duration: #{$duration};
+  animation-duration: #{$duration};
+}
+
+@mixin button-variant($color, $background, $minimalColor: $background) {
+  color: $color;
+  background-color: $background;
+  border: 2px solid $background;
+
+  &:focus,
+  &.focus {
+    color: $color;
+    background-color: $background;
+    border-color: $background;
+  }
+  &:hover {
+    color: $color;
+    background-color: darken($background, 10%);
+    border-color: darken($background, 10%);
+  }
+  &:active,
+  &.active,
+  &:not(:disabled):not(.disabled):active,
+  .open > &.dropdown-toggle {
+    color: $color;
+    background-color: darken($background, 10%);
+    border-color: darken($background, 10%);
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $color;
+      background-color: darken($background, 17%);
+      border-color: darken($background, 17%);
+    }
+
+    &:focus,
+    &.focus {
+      color: $color;
+      background-color: darken($background, 17%);
+      border-color: darken($background, 17%);
+    }
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus,
+    &.focus {
+      background-color: $background;
+      border-color: $background;
+    }
+  }
+
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+
+  &.btn-minimal {
+    background-color: transparent;
+    color: $minimalColor;
+    border: 2px solid $background;
+
+    &:focus,
+    &.focus {
+      color: $minimalColor;
+      background-color: transparent;
+      border: 2px solid $background;
+    }
+    &:hover {
+      color: $color;
+      background-color: transparent;
+      border-color: darken($background, 10%);
+    }
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle {
+      color: $color;
+      background-color: transparent;
+      border-color: darken($background, 10%);
+
+      &:hover,
+      &:focus,
+      &.focus {
+        color: $color;
+        background-color: transparent;
+        border-color: darken($background, 17%);
+      }
+    }
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle {
+      background-image: none;
+    }
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+      &:hover,
+      &:focus,
+      &.focus {
+        background-color: transparent;
+        border-color: $background;
+      }
+    }
+
+    .badge {
+      color: $background;
+      background-color: transparent;
+      border-color: $color;
+    }
+  }
+}
