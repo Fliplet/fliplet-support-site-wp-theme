@@ -1,10 +1,9 @@
-/* Variables */
 @import "scss/mixins/mixins";
 @import "scss/variables/site-variables";
 
 /* Site components */
-@import "scss/site/bootstrap-reset";
 @import "scss/site/base";
+@import "scss/site/bootstrap-reset";
 @import "scss/site/buttons";
 @import "scss/site/header/header";
 @import "scss/site/content/content";

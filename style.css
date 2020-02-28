@@ -1,19 +1,5 @@
-/* Variables */
 /* Site components */
 @import url("https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700|Open+Sans:300,400,600,700&display=swap");
-.card {
-  overflow: hidden;
-  border: none;
-  border-radius: .5rem;
-  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
-  -webkit-transition: box-shadow 0.15s ease-out;
-  -moz-transition: box-shadow 0.15s ease-out;
-  -ms-transition: box-shadow 0.15s ease-out;
-  -o-transition: box-shadow 0.15s ease-out;
-  transition: box-shadow 0.15s ease-out; }
-  .card:hover {
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
-
 html {
   height: 100%;
   overflow: hidden; }
@@ -71,6 +57,19 @@ h5 {
 h6 {
   font-size: 16px;
   font-family: 'Muli', sans-serif; }
+
+.card {
+  overflow: hidden;
+  border: none;
+  border-radius: .5rem;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+  -webkit-transition: box-shadow 0.15s ease-out;
+  -moz-transition: box-shadow 0.15s ease-out;
+  -ms-transition: box-shadow 0.15s ease-out;
+  -o-transition: box-shadow 0.15s ease-out;
+  transition: box-shadow 0.15s ease-out; }
+  .card:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
 
 .btn {
   padding: .65rem 1rem;
