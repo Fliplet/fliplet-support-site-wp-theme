@@ -1,4 +1,16 @@
-<?php get_header();?>
+<?php
+/**
+ * The template for displaying 404 pages (not found)
+ *
+ * @link https://codex.wordpress.org/Creating_an_Error_404_Page
+ *
+ * @package Fliplet
+ * @subpackage Fliplet_Support
+ * @since 1.0.0
+ */
+
+get_header();
+?>
 
 <div class="error-404 not-found">
   <header class="page-header">

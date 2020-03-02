@@ -1,4 +1,16 @@
-<?php get_header();?>
+<?php
+/**
+ * The template for displaying archive pages
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package Fliplet
+ * @subpackage Fliplet_Support
+ * @since 1.0.0
+ */
+
+get_header();
+?>
 
 <h1><?php single_cat_title();?></h1>
 

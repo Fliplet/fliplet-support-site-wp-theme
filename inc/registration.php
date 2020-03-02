@@ -1,4 +1,12 @@
 <?php
+/**
+ * Functions that adds functionality to the WrodPress site.
+ *
+ * @package Fliplet
+ * @subpackage Fliplet_Support
+ * @since 1.0.0
+ */
+
 /* Registers menu locations */
 register_nav_menus(
   array(

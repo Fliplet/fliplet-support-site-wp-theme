@@ -1,4 +1,12 @@
 <?php
+/**
+ * Functions that enqueue the styles and loads them.
+ *
+ * @package Fliplet
+ * @subpackage Fliplet_Support
+ * @since 1.0.0
+ */
+
 /* Enqueues the styles */
 function load_bootstrap_css() {
   wp_register_style('bootstrap_css', get_template_directory_uri() . '/styles/vendor/bootstrap/bootstrap.min.css', array(), '4.4.1', 'all');

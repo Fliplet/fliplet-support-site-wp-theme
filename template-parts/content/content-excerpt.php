@@ -1,3 +1,16 @@
+<?php
+/**
+ * Template part for displaying post archives and search results
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package Fliplet
+ * @subpackage Fliplet_Support
+ * @since 1.0.0
+ */
+
+?>
+
 <div class="col-md-4">
   <div class="card">
   <?php if (has_post_thumbnail()): ?>

@@ -1,4 +1,12 @@
 <?php
+/**
+ * A custom Class to render a custom menu.
+ *
+ * @package Fliplet
+ * @subpackage Fliplet_Support
+ * @since 1.0.0
+ */
+
 /* Custom navigation menu */
 class Nav_Menu_Walker_Bootstrap extends Walker_Nav_Menu {
   public function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0) {
