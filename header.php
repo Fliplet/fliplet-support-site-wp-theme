@@ -10,18 +10,14 @@
  * @subpackage Fliplet_Support
  * @since 1.0.0
  */
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html <?php body_class();?>>
-<head>
-  <meta name="description" content="<?php bloginfo('description');?>">
-  <meta charset="<?php bloginfo('charset');?>">
-  <meta name="viewport" content="width=device-width, initial-sclae=1">
-  <?php wp_head();?>
-</head>
+<?php get_template_part( 'template-parts/header/head', 'tag' ); ?>
 
 <body <?php body_class();?>>
 
   <?php get_template_part( 'template-parts/header/top', 'navbar' ); ?>
   <?php get_template_part( 'template-parts/header/slide', 'nav' ); ?>
 
-  <div id="page" class="container">
+  <div id="page" class="<?php echo is_full_width_template() ? 'container-fluid' : 'container';?>">
