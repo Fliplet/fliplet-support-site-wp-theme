@@ -1,3 +1,15 @@
+<?php
+/**
+ * Template part for displaying the top navigation bar.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package Fliplet
+ * @subpackage Fliplet_Support
+ * @since 1.0.0
+ */
+?>
+
 <nav class="navbar navbar-expand-lg">
   <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
     <?php
