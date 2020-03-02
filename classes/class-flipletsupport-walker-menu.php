@@ -51,4 +51,3 @@ class Nav_Menu_Walker_Bootstrap extends Walker_Nav_Menu {
     $output .= '</li>';
   }
 }
-?>

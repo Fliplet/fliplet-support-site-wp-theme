@@ -11,7 +11,7 @@
 
 ?>
 
-<div class="col-md-4">
+<div class="col-md-4 article-card">
   <div class="card">
   <?php if (has_post_thumbnail()): ?>
     <img src="<?php the_post_thumbnail_url('large');?>">

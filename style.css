@@ -636,6 +636,8 @@ a:focus, a:active:focus {
         color: #ffffff; }
   #page .post-list {
     padding-top: 30px; }
+    #page .post-list .article-card .card {
+      margin-bottom: 30px; }
     #page .post-list .card-body .post-categories {
       list-style: none;
       padding: 0;
@@ -655,6 +657,21 @@ a:focus, a:active:focus {
           display: none; }
     #page .post-list .card-body .card-title {
       margin-bottom: .2rem; }
+  #page .pagination-holder {
+    display: flex;
+    justify-content: center; }
+    #page .pagination-holder .page-item .page-link {
+      color: #474974;
+      background-color: #eae9ec;
+      border-color: #dddbe0;
+      box-shadow: none;
+      outline: none; }
+      #page .pagination-holder .page-item .page-link:hover {
+        background-color: #edecee; }
+    #page .pagination-holder .page-item.active .page-link {
+      background-color: #474974;
+      color: #ffffff;
+      border-color: #474974; }
 
 .error-404 {
   display: flex;

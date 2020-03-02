@@ -21,4 +21,9 @@
 <?php
 the_content();
 ?>
+
+<footer class="entry-footer">
+  <?php flipletsupport_entry_footer(); ?>
+</footer>
+
 </article>

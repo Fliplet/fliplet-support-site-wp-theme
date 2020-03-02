@@ -31,6 +31,9 @@ get_header();
     endwhile;
   ?>
 </div>
+
+<?php echo bootstrap_pagination(); ?>
+
 <?php else :
   get_template_part('template-parts/content/content', 'none');
 endif;

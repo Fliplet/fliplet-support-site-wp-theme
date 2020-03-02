@@ -26,7 +26,7 @@
         font-size: 12px;
         font-weight: 700;
         padding: 10px 16px;
-        background-color: #eae9ec;
+        background-color: $default-color;
         color: $primary-dark-color;
       }
 
@@ -42,6 +42,12 @@
 
   .post-list {
     padding-top: 30px;
+
+    .article-card {
+      .card {
+        margin-bottom: 30px;
+      }
+    }
 
     .card-body {
       .post-categories {
@@ -73,6 +79,33 @@
 
       .card-title {
         margin-bottom: .2rem;
+      }
+    }
+  }
+
+  .pagination-holder {
+    display: flex;
+    justify-content: center;
+
+    .page-item{
+      .page-link {
+        color: $primary-dark-color;
+        background-color: $default-color;
+        border-color: darken($default-color, 5%);
+        box-shadow: none;
+        outline: none;
+
+        &:hover {
+          background-color: lighten($default-color, 1%);
+        }
+      }
+
+      &.active {
+        .page-link {
+          background-color: $primary-dark-color;
+          color: #ffffff;
+          border-color: $primary-dark-color;
+        }
       }
     }
   }

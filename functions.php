@@ -14,5 +14,7 @@ require get_template_directory() . '/inc/theme-support.php';
 require get_template_directory() . '/inc/load-styles.php';
 require get_template_directory() . '/inc/load-scripts.php';
 require get_template_directory() . '/inc/registration.php';
-require get_template_directory() . '/inc/custom-walker.php';
+require get_template_directory() . '/inc/template-tags.php';
+require get_template_directory() . '/classes/class-flipletsupport-walker-menu.php';
+require get_template_directory() . '/classes/class-flipletsupport-walker-comment.php';
 ?>
