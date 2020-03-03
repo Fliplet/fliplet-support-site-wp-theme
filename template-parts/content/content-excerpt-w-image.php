@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying post archives and search results
+ * Template part for displaying post archives and search results with images
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -13,6 +13,9 @@
 
 <div class="col-md-4 article-card">
   <div class="card">
+  <?php if (has_post_thumbnail()): ?>
+    <img src="<?php the_post_thumbnail_url('large');?>">
+  <?php endif;?>
     <div class="card-body">
       <?php the_category();?>
       <h3 class="card-title"><?php the_title();?></h3>
