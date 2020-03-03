@@ -13,6 +13,9 @@
 .btn-primary {
   @include button-variant($btn-primary-color, $btn-primary-bg);
 }
+.btn-secondary {
+  @include button-variant($btn-secondary-color, $btn-secondary-bg);
+}
 .btn-success {
   @include button-variant($btn-success-color, $btn-success-bg);
 }

@@ -211,6 +211,68 @@ h6 {
       background-color: transparent;
       border-color: #ffffff; }
 
+.btn-secondary {
+  color: #ffffff;
+  background-color: #474974;
+  border: 2px solid #474974; }
+  .btn-secondary:focus, .btn-secondary.focus {
+    color: #ffffff;
+    background-color: #474974;
+    border-color: #474974; }
+  .btn-secondary:hover {
+    color: #ffffff;
+    background-color: #343554;
+    border-color: #343554; }
+  .btn-secondary:active, .btn-secondary.active, .btn-secondary:not(:disabled):not(.disabled):active, .open > .btn-secondary.dropdown-toggle {
+    color: #ffffff;
+    background-color: #343554;
+    border-color: #343554; }
+    .btn-secondary:active:hover, .btn-secondary:active:focus, .btn-secondary:active.focus, .btn-secondary.active:hover, .btn-secondary.active:focus, .btn-secondary.active.focus, .btn-secondary:not(:disabled):not(.disabled):active:hover, .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled):active.focus, .open > .btn-secondary.dropdown-toggle:hover, .open > .btn-secondary.dropdown-toggle:focus, .open > .btn-secondary.dropdown-toggle.focus {
+      color: #ffffff;
+      background-color: #26273e;
+      border-color: #26273e; }
+    .btn-secondary:active:focus, .btn-secondary:active.focus, .btn-secondary.active:focus, .btn-secondary.active.focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled):active.focus, .open > .btn-secondary.dropdown-toggle:focus, .open > .btn-secondary.dropdown-toggle.focus {
+      color: #ffffff;
+      background-color: #26273e;
+      border-color: #26273e; }
+  .btn-secondary:active, .btn-secondary.active, .open > .btn-secondary.dropdown-toggle {
+    background-image: none; }
+  .btn-secondary.disabled:hover, .btn-secondary.disabled:focus, .btn-secondary.disabled.focus, .btn-secondary[disabled]:hover, .btn-secondary[disabled]:focus, .btn-secondary[disabled].focus, fieldset[disabled] .btn-secondary:hover, fieldset[disabled] .btn-secondary:focus, fieldset[disabled] .btn-secondary.focus {
+    background-color: #474974;
+    border-color: #474974; }
+  .btn-secondary .badge {
+    color: #474974;
+    background-color: #ffffff; }
+  .btn-secondary.btn-minimal {
+    background-color: transparent;
+    color: #474974;
+    border: 2px solid #474974; }
+    .btn-secondary.btn-minimal:focus, .btn-secondary.btn-minimal.focus {
+      color: #474974;
+      background-color: transparent;
+      border: 2px solid #474974; }
+    .btn-secondary.btn-minimal:hover {
+      color: #ffffff;
+      background-color: transparent;
+      border-color: #343554; }
+    .btn-secondary.btn-minimal:active, .btn-secondary.btn-minimal.active, .open > .btn-secondary.btn-minimal.dropdown-toggle {
+      color: #ffffff;
+      background-color: transparent;
+      border-color: #343554; }
+      .btn-secondary.btn-minimal:active:hover, .btn-secondary.btn-minimal:active:focus, .btn-secondary.btn-minimal:active.focus, .btn-secondary.btn-minimal.active:hover, .btn-secondary.btn-minimal.active:focus, .btn-secondary.btn-minimal.active.focus, .open > .btn-secondary.btn-minimal.dropdown-toggle:hover, .open > .btn-secondary.btn-minimal.dropdown-toggle:focus, .open > .btn-secondary.btn-minimal.dropdown-toggle.focus {
+        color: #ffffff;
+        background-color: transparent;
+        border-color: #26273e; }
+    .btn-secondary.btn-minimal:active, .btn-secondary.btn-minimal.active, .open > .btn-secondary.btn-minimal.dropdown-toggle {
+      background-image: none; }
+    .btn-secondary.btn-minimal.disabled:hover, .btn-secondary.btn-minimal.disabled:focus, .btn-secondary.btn-minimal.disabled.focus, .btn-secondary.btn-minimal[disabled]:hover, .btn-secondary.btn-minimal[disabled]:focus, .btn-secondary.btn-minimal[disabled].focus, fieldset[disabled] .btn-secondary.btn-minimal:hover, fieldset[disabled] .btn-secondary.btn-minimal:focus, fieldset[disabled] .btn-secondary.btn-minimal.focus {
+      background-color: transparent;
+      border-color: #474974; }
+    .btn-secondary.btn-minimal .badge {
+      color: #474974;
+      background-color: transparent;
+      border-color: #ffffff; }
+
 .btn-success {
   color: #ffffff;
   background-color: #19cd9d;
@@ -678,5 +740,13 @@ a:focus, a:active:focus {
   flex-flow: column wrap;
   align-items: center;
   padding-top: 10vh; }
+  .error-404 .page-content {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center; }
+    .error-404 .page-content img {
+      width: 400px; }
+    .error-404 .page-content .btn {
+      margin-top: 30px; }
 
 /*# sourceMappingURL=style.css.map */

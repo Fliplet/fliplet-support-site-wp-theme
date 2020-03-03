@@ -14,12 +14,12 @@ get_header();
 
 <div class="error-404 not-found">
   <header class="page-header">
-    <h1 class="page-title"><?php _e( 'Oops! The page can&rsquo;t be found.', 'flipletsupport' ); ?></h1>
+    <h1 class="page-title"><?php _e( 'Not found', 'flipletsupport' ); ?></h1>
   </header>
 
   <div class="page-content">
-    <p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'flipletsupport' ); ?></p>
-    <?php get_search_form(); ?>
+    <img src="<?php echo get_template_directory_uri() . '/images/404-image.png'; ?>" title="Not found">
+    <a class="btn btn-secondary" href="<?php echo get_home_url(); ?>">Go to homepage</a>
   </div>
 </div>
 
