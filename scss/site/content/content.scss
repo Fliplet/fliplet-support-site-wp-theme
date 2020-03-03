@@ -50,35 +50,66 @@
     }
 
     .card-body {
-      .post-categories {
-        list-style: none;
-        padding: 0;
-        margin-bottom: .2rem;
-        display: flex;
-        flex-flow: row wrap;
-
-        li {
-          text-transform: uppercase;
-          font-size: 12px;
-          font-weight: 600;
-
-          &:after {
-            content: '/';
-            display: inline-block;
-            margin: 0 5px;
-            color: $primary-color;
-          }
-
-          &:last-child {
-            &:after {
-              display: none;
-            }
-          }
-        }
-      }
-
       .card-title {
         margin-bottom: .2rem;
+      }
+    }
+  }
+
+  .post-categories {
+    list-style: none;
+    padding: 0;
+    margin-bottom: .2rem;
+    display: flex;
+    flex-flow: row wrap;
+
+    li {
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 600;
+
+      &:after {
+        content: '/';
+        display: inline-block;
+        margin: 0 5px;
+        color: $primary-color;
+      }
+
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .post-hero {
+    position: relative;
+    margin-top: -3rem;
+    margin-bottom: 3rem;
+    padding: 6rem 0;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    .hero-screen {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba($primary-dark-color, 0.7);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      color: #ffffff;
+
+      h1 {
+        color: #ffffff;
       }
     }
   }

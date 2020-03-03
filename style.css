@@ -66,6 +66,16 @@ h6 {
   font-size: 16px;
   font-family: 'Muli', sans-serif; }
 
+.container {
+  width: 100%;
+  max-width: none; }
+  @media only screen and (min-width: 641px) {
+    .container {
+      max-width: 650px; } }
+  @media only screen and (min-width: 1201px) {
+    .container {
+      max-width: 700px; } }
+
 .card {
   overflow: hidden;
   border: none;
@@ -700,25 +710,48 @@ a:focus, a:active:focus {
     padding-top: 30px; }
     #page .post-list .article-card .card {
       margin-bottom: 30px; }
-    #page .post-list .card-body .post-categories {
-      list-style: none;
-      padding: 0;
-      margin-bottom: .2rem;
-      display: flex;
-      flex-flow: row wrap; }
-      #page .post-list .card-body .post-categories li {
-        text-transform: uppercase;
-        font-size: 12px;
-        font-weight: 600; }
-        #page .post-list .card-body .post-categories li:after {
-          content: '/';
-          display: inline-block;
-          margin: 0 5px;
-          color: #23d5ff; }
-        #page .post-list .card-body .post-categories li:last-child:after {
-          display: none; }
     #page .post-list .card-body .card-title {
       margin-bottom: .2rem; }
+  #page .post-categories {
+    list-style: none;
+    padding: 0;
+    margin-bottom: .2rem;
+    display: flex;
+    flex-flow: row wrap; }
+    #page .post-categories li {
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 600; }
+      #page .post-categories li:after {
+        content: '/';
+        display: inline-block;
+        margin: 0 5px;
+        color: #23d5ff; }
+      #page .post-categories li:last-child:after {
+        display: none; }
+  #page .post-hero {
+    position: relative;
+    margin-top: -3rem;
+    margin-bottom: 3rem;
+    padding: 6rem 0;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+    #page .post-hero .hero-screen {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(71, 73, 116, 0.7);
+      z-index: 1; }
+    #page .post-hero .hero-content {
+      position: relative;
+      z-index: 2;
+      color: #ffffff; }
+      #page .post-hero .hero-content h1 {
+        color: #ffffff; }
   #page .pagination-holder {
     display: flex;
     justify-content: center; }

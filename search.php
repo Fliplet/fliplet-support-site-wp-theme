@@ -12,6 +12,8 @@
 get_header();
 ?>
 
+<article class="<?php echo is_full_width_template() ? 'container-fluid' : 'container-lg' ?>">
+
 <?php if (have_posts()) : ?>
 <h1>
   <?php _e( 'Search results for: ', 'flipletsupport' ); ?>
@@ -32,5 +34,7 @@ get_header();
     <?php _e( 'Nothing Found', 'flipletsupport' ); ?>
   </h1>
 <?php endif; ?>
+
+</article>
 
 <?php get_footer(); ?>

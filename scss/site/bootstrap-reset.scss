@@ -1,3 +1,16 @@
+.container {
+  width: 100%;
+  max-width: none;
+
+  @include above(640px) {
+    max-width: 650px;
+  }
+
+  @include above(1200px) {
+    max-width: 700px;
+  }
+}
+
 .card {
   overflow: hidden;
   border: none;

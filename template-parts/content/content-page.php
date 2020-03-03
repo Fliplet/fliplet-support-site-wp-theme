@@ -11,7 +11,8 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( is_full_width_template() ? 'container-fluid' : 'container' ); ?>>
+
 <?php if (!is_front_page()) : ?>
 <h1><?php the_title();?></h1>
 <?php endif; ?>

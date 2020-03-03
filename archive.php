@@ -12,6 +12,8 @@
 get_header();
 ?>
 
+<article class="<?php echo is_full_width_template() ? 'container-fluid' : 'container-lg' ?>">
+
 <h1><?php single_cat_title();?></h1>
 
 <?php get_template_part('template-parts/content/content', 'categories'); ?>
@@ -33,5 +35,7 @@ get_header();
   get_template_part('template-parts/content/content', 'none');
 endif;
 ?>
+
+</article>
 
 <?php get_footer();?>

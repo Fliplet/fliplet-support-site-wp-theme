@@ -11,16 +11,30 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<h1><?php the_title(); ?></h1>
-
 <?php if (has_post_thumbnail()) : ?>
-  <img src="<?php the_post_thumbnail_url(); ?>">
+<div class="post-hero" style="background-image: url('<?php echo the_post_thumbnail_url(); ?>')">
+  <div class="hero-screen"></div>
+  <div class="hero-content <?php echo is_full_width_template() ? 'container-fluid' : 'container'; ?>">
+    <span class="post-categories"><?php the_category();?></span>
+    <h1><?php the_title(); ?></h1>
+    <?php if (has_excerpt()) : ?>
+    <p class="subtitle"><?php the_excerpt() ?></p>
+    <?php endif; ?>
+  </div>
+</div>
 <?php endif; ?>
 
-<?php
-the_content();
-?>
+<article id="post-<?php the_ID(); ?>" <?php post_class( is_full_width_template() ? 'container-fluid' : 'container' ); ?>>
+
+<?php if (!has_post_thumbnail()) : ?>
+<span class="post-categories"><?php the_category();?></span>
+<h1><?php the_title(); ?></h1>
+<?php if (has_excerpt()) : ?>
+<p class="subtitle"><?php the_excerpt() ?></p>
+<?php endif; ?>
+<?php endif; ?>
+
+<?php the_content(); ?>
 
 <footer class="entry-footer">
   <?php flipletsupport_entry_footer(); ?>

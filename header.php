@@ -20,4 +20,4 @@
   <?php get_template_part( 'template-parts/header/top', 'navbar' ); ?>
   <?php get_template_part( 'template-parts/header/slide', 'nav' ); ?>
 
-  <div id="page" class="<?php echo is_full_width_template() ? 'container-fluid' : 'container';?>">
+  <div id="page">
