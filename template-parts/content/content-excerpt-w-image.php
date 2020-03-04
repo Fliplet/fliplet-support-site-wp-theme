@@ -18,9 +18,11 @@
   <?php endif;?>
     <div class="card-body">
       <?php the_category();?>
-      <h3 class="card-title"><?php the_title();?></h3>
-      <?php the_excerpt();?>
-      <a href="<?php the_permalink();?>" class="btn btn-primary">Read more</a>
+      <a class="pseudo-link" href="<?php the_permalink();?>">
+        <h3 class="card-title"><?php the_title();?></h3>
+        <?php the_excerpt();?>
+      </a>
+      <a href="<?php the_permalink();?>" class="btn btn-default">Keep reading</a>
     </div>
   </div>
 </div>

@@ -74,7 +74,29 @@
 
     .card-body {
       .card-title {
-        margin-bottom: .2rem;
+        margin: 0;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .pseudo-link {
+        color: $text-color;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &:active:hover,
+        &:active:focus {
+          color: $text-color;
+        }
+      }
+
+      .btn {
+        font-size: .8rem;
+        margin-top: 10px;
+        padding: .5rem 1rem;
       }
     }
   }
@@ -82,7 +104,7 @@
   .post-categories {
     list-style: none;
     padding: 0;
-    margin-bottom: .2rem;
+    margin-bottom: 0;
     display: flex;
     flex-flow: row wrap;
 
@@ -109,7 +131,6 @@
   .post-hero {
     position: relative;
     margin-top: -3rem;
-    margin-bottom: 3rem;
     padding: 6rem 0;
     height: 40vh;
     background-repeat: no-repeat;
@@ -135,6 +156,14 @@
         color: #ffffff;
       }
     }
+  }
+
+  .subtitle {
+    opacity: 0.6;
+  }
+
+  .post-content {
+    margin-top: 3rem;
   }
 
   .pagination-holder {

@@ -18,7 +18,7 @@
     <span class="post-categories"><?php the_category();?></span>
     <h1><?php the_title(); ?></h1>
     <?php if (has_excerpt()) : ?>
-    <p class="subtitle"><?php the_excerpt() ?></p>
+    <p class="subtitle"><?php echo get_the_excerpt(); ?></p>
     <?php endif; ?>
   </div>
 </div>
@@ -30,11 +30,13 @@
 <span class="post-categories"><?php the_category();?></span>
 <h1><?php the_title(); ?></h1>
 <?php if (has_excerpt()) : ?>
-<p class="subtitle"><?php the_excerpt() ?></p>
+<p class="subtitle"><?php echo get_the_excerpt(); ?></p>
 <?php endif; ?>
 <?php endif; ?>
 
+<div class="post-content">
 <?php the_content(); ?>
+</div>
 
 <footer class="entry-footer">
   <?php flipletsupport_entry_footer(); ?>
