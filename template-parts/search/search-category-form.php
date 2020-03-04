@@ -1,4 +1,14 @@
 <?php
+/**
+ * Template part for displaying the search form with a category query.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package Fliplet
+ * @subpackage Fliplet_Support
+ * @since 1.0.0
+ */
+
 $queriedObject = get_queried_object();
 $categoryId = $queriedObject->term_id;
 ?>
