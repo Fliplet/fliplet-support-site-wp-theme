@@ -19,7 +19,9 @@ get_header();
 
 <article class="<?php echo is_full_width_template() ? 'container-fluid' : 'container-lg' ?>">
 
-<h1><?php single_post_title();?></h1>
+<?php get_template_part('template-parts/content/article', 'header'); ?>
+
+<hr>
 
 <?php get_template_part('template-parts/content/content', 'categories'); ?>
 
