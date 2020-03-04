@@ -835,6 +835,26 @@ a:focus, a:active:focus {
       background-color: #474974;
       color: #ffffff;
       border-color: #474974; }
+  #page .search-result-list {
+    margin-top: 4rem; }
+    #page .search-result-list .result-details {
+      margin-bottom: 3rem; }
+      #page .search-result-list .result-details .search-result-title {
+        font-weight: normal;
+        margin: 0; }
+      #page .search-result-list .result-details .search-result-slug {
+        font-size: 14px;
+        margin: 0; }
+        #page .search-result-list .result-details .search-result-slug a {
+          color: rgba(141, 142, 165, 0.6); }
+      #page .search-result-list .result-details .search-result-categories {
+        display: flex;
+        align-items: baseline;
+        font-size: 14px; }
+        #page .search-result-list .result-details .search-result-categories .post-categories {
+          margin-left: 10px; }
+          #page .search-result-list .result-details .search-result-categories .post-categories li {
+            text-transform: none; }
 
 .site-footer {
   display: flex;
@@ -904,8 +924,8 @@ a:focus, a:active:focus {
     position: absolute;
     top: 0;
     right: 14px;
+    bottom: 0;
     width: 24px;
-    height: 34px;
     line-height: 34px;
     padding: 0;
     display: flex;
@@ -915,5 +935,21 @@ a:focus, a:active:focus {
       font-size: 20px;
       font-weight: bold;
       color: #8d8ea5; }
+
+.article-header.search .searchform .search-input-group .form-control {
+  border: 1px solid rgba(54, 52, 76, 0.1);
+  padding: 12px 58px 12px 20px;
+  font-size: 22px;
+  height: auto;
+  -webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -moz-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -ms-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+  .article-header.search .searchform .search-input-group .form-control:focus {
+    border-color: #36344c;
+    box-shadow: 0 0 25px rgba(54, 52, 76, 0.2); }
+.article-header.search .searchform .search-input-group button {
+  width: 34px; }
 
 /*# sourceMappingURL=style.css.map */

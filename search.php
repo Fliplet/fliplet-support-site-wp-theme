@@ -14,26 +14,23 @@ get_header();
 
 <article class="<?php echo is_full_width_template() ? 'container-fluid' : 'container-lg' ?>">
 
-<?php if (have_posts()) : ?>
-<h1>
-  <?php _e( 'Search results for: ', 'flipletsupport' ); ?>
-  <span><?php echo get_search_query(); ?></span>
-</h1>
+<?php get_template_part('template-parts/search/search', 'header'); ?>
 
-<div class="row post-list">
-  <?php
-  while (have_posts()) :
-    the_post();
+  <div class="search-result-list">
+  <?php if (have_posts()) : ?>
+    <?php
+    while (have_posts()) :
+      the_post();
 
-    get_template_part('template-parts/content/content', 'excerpt');
-  endwhile;
-  ?>
-</div>
-<?php else : ?>
-  <h1>
-    <?php _e( 'Nothing Found', 'flipletsupport' ); ?>
-  </h1>
-<?php endif; ?>
+      get_template_part('template-parts/search/search', 'excerpt');
+    endwhile;
+    ?>
+  <?php else : ?>
+    <h1>
+      <?php _e( 'Nothing Found', 'flipletsupport' ); ?>
+    </h1>
+  <?php endif; ?>
+  </div>
 
 </article>
 

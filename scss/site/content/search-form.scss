@@ -15,8 +15,8 @@
       position: absolute;
       top: 0;
       right: 14px;
+      bottom: 0;
       width: 24px;
-      height: 34px;
       line-height: 34px;
       padding: 0;
       display: flex;
@@ -27,6 +27,32 @@
         font-size: 20px;
         font-weight: bold;
         color: $text-color;
+      }
+    }
+  }
+}
+
+.article-header {
+  &.search {
+    .searchform {
+      .search-input-group {
+        .form-control {
+          border: 1px solid rgba($dark-bg-color, 0.1);
+          padding: 12px 58px 12px 20px;
+          font-size: 22px;
+          height: auto;
+  
+          @include transition(border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out);
+  
+          &:focus {
+            border-color: $dark-bg-color;
+            box-shadow: 0 0 25px rgba($dark-bg-color, 0.2);
+          }
+        }
+
+        button {
+          width: 34px;
+        }
       }
     }
   }

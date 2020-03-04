@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying post archives and search results
+ * Template part for displaying post archives
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
