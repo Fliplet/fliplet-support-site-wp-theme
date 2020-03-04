@@ -24,23 +24,27 @@
     -->
   </a>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile" aria-controls="navbar-mobile" aria-expanded="false">
-    <div class="navbar-hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </button>
+  <div class="navbar-group">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile" aria-controls="navbar-mobile" aria-expanded="false">
+      <div class="navbar-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </button>
 
-  <?php
-  wp_nav_menu(
-    array(
-      'theme_location' => 'top-menu',
-      'menu_class' => 'navbar-nav',
-      'container' => 'div',
-      'container_class' => 'navbar-collapse',
-      'walker' => new Nav_Menu_Walker_Bootstrap(),
-    )
-  );
-  ?>
+    <?php
+    wp_nav_menu(
+      array(
+        'theme_location' => 'top-menu',
+        'menu_class' => 'navbar-nav',
+        'container' => 'div',
+        'container_class' => 'navbar-collapse',
+        'walker' => new Nav_Menu_Walker_Bootstrap(),
+      )
+    );
+
+    get_template_part( 'template-parts/search/search', 'form' );
+    ?>
+  </div>
 </nav>

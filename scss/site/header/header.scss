@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: $dark-bg-color;
+  background-color: $darker-bg-color;
   width: 100%;
   height: $navbar-height;
   justify-content: space-between;
@@ -16,6 +16,16 @@
     img {
       max-height: $navbar-height;
       padding: 10px 0;
+    }
+  }
+
+  .navbar-group {
+    display: flex;
+
+    @include below(991px) {
+      .searchform {
+        display: none;
+      }
     }
   }
 
@@ -95,7 +105,7 @@
     }
 
     .navbar-nav {
-      margin-right: -15px;
+      margin-right: 15px;
 
       .nav-item {
         .nav-link {
@@ -129,7 +139,7 @@
   width: 100%;
   height: calc(100vh - #{$navbar-height});
   padding: 5vw 10vw 0;
-  background-color: $dark-bg-color;
+  background-color: $darker-bg-color;
 
   @include transition(right 0.15s ease-in-out);
 
@@ -158,6 +168,21 @@
         }
       }
     }
+  }
+
+  .navbar-overlay-title {
+    color: $text-color;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 30px 0 15px;
+
+    &:first-child {
+      margin: 0 0 7px;
+    }
+  }
+
+  .search-input-group {
+    max-width: 300px;
   }
 }
 
