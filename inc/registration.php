@@ -11,7 +11,9 @@
 register_nav_menus(
   array(
     'top-menu' => __('Top Menu', 'theme'),
-    'footer-menu' => __('Footer Menu', 'theme'),
+		'footer-menu-company' => __('Footer Company Menu', 'theme'),
+		'footer-menu-product' => __('Footer Product Links Menu', 'theme'),
+		'footer-menu-resources' => __('Footer Resources Menu', 'theme')
   )
 );
 

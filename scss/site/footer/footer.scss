@@ -1,0 +1,58 @@
+.site-footer {
+  display: flex;
+  background-color: $dark-bg-color;
+  padding-bottom: 100px;
+
+  .menu-column {
+    width: 25%;
+    padding: 4vh 3vw;
+
+    h3 {
+      color: $text-color;
+
+      @include above(992px) {
+        font-size: 24px;
+      }
+    }
+
+    .footer-menu {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      li {
+        margin-top: 10px;
+
+        a {
+          color: $text-color;
+
+          @include transition(color 0.2s ease-in-out);
+
+          &:hover,
+          &.current-menu-item {
+            color: $primary-color;
+          }
+        }
+      }
+
+      &#social-menu {
+        display: flex;
+        margin-top: 10px;
+
+        li {
+          margin-top: 0;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  @include below(767px) {
+    flex-direction: column;
+
+    .menu-column {
+      width: 100%;
+      padding: 4vh 15px;
+    }
+  }
+}
