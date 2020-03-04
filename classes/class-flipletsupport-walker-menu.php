@@ -12,7 +12,7 @@ class Nav_Menu_Walker_Bootstrap extends Walker_Nav_Menu {
   public function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0) {
     $class_names = $value = 'nav-item';
     $classes = empty($item->classes) ? array() : (array) $item->classes;
-    $class_names = in_array("current_page_item", $item->classes) ? ' active' : '';
+    $class_names = in_array("current_page_item", $item->classes) || ($item->type == 'post_type' && is_category()) ? ' active' : '';
 
     $output .= '<li id="menu-item-' . $item->ID . '" class="' . $value . $class_names . '">';
     $attributes = '';
