@@ -9,9 +9,9 @@
 
 /* Enqueues the scripts */
 function load_jquery() {
-  wp_register_script('jquery', get_template_directory_uri() . '/js/vendor/jquery/jquery-3.4.1.min.js', '', '3.4.1', false);
+  wp_register_script('jquery_3_4_1', get_template_directory_uri() . '/js/vendor/jquery/jquery-3.4.1.min.js', '', '3.4.1', false);
 
-  wp_enqueue_script('jquery');
+  wp_enqueue_script('jquery_3_4_1');
 }
 
 function load_bootstrap_js() {
