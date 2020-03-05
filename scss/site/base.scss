@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700|Open+Sans:300,400,600,700&display=swap');
 
+::-moz-selection {
+  background: $dark-bg-color;
+  color: #ffffff;
+}
+
+::selection {
+  background: $dark-bg-color;
+  color: #ffffff;
+}
+
 html {
   height: 100%;
   overflow: hidden;
@@ -40,6 +50,7 @@ h5,
 h6 {
   color: $primary-dark-color;
   font-weight: 700;
+  line-height: 1.5;
 }
 
 h1 {
