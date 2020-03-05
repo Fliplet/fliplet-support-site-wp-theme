@@ -872,15 +872,9 @@ a:focus, a:active:focus {
     #page .control-holder .btn + .btn {
       margin-left: 10px; }
   #page .front-page-wrapper {
-    display: flex;
-    margin-top: 3rem; }
+    margin-top: 2rem; }
     #page .front-page-wrapper .front-page-column {
-      width: 33.33%;
-      padding: 0 30px; }
-      #page .front-page-wrapper .front-page-column:first-child {
-        padding-left: 15px; }
-      #page .front-page-wrapper .front-page-column:last-child {
-        padding-right: 15px; }
+      margin-bottom: 30px; }
       #page .front-page-wrapper .front-page-column .image-holder {
         text-align: center; }
       #page .front-page-wrapper .front-page-column i {

@@ -242,20 +242,10 @@
   }
 
   .front-page-wrapper {
-    display: flex;
-    margin-top: 3rem;
+    margin-top: 2rem;
 
     .front-page-column {
-      width: 33.33%;
-      padding: 0 30px;
-
-      &:first-child {
-        padding-left: 15px;
-      }
-
-      &:last-child {
-        padding-right: 15px;
-      }
+      margin-bottom: 30px;
 
       .image-holder {
         text-align: center;
