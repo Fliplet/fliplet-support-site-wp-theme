@@ -914,7 +914,7 @@ a:focus, a:active:focus {
 .site-footer {
   display: flex;
   background-color: #36344c;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   margin-top: 60px; }
   .site-footer .menu-column {
     width: 25%;
