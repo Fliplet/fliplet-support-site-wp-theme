@@ -19,11 +19,14 @@ class Nav_Menu_Walker_Bootstrap extends Walker_Nav_Menu {
 
     !empty($item->attr_title)
     // Avoid redundant titles
-     and $item->attr_title !== $item->title
+    and $item->attr_title !== $item->title
     and $attributes .= ' title="' . esc_attr($item->attr_title) . '"';
 
     !empty($item->url)
     and $attributes .= ' href="' . esc_attr($item->url) . '"';
+
+    !empty($item->target)
+    and $attributes .= ' target="' . esc_attr($item->target) . '"';
 
     $attributes = trim($attributes);
     $title = apply_filters('the_title', $item->title, $item->ID);
