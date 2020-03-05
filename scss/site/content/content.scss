@@ -137,6 +137,10 @@
     background-position: center center;
     background-size: cover;
 
+    @include below(992px) {
+      margin-top: -1.5rem;
+    }
+
     .hero-screen {
       position: absolute;
       top: 0;

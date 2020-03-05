@@ -802,6 +802,9 @@ a:focus, a:active:focus {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover; }
+    @media only screen and (max-width: 992px) {
+      #page .post-hero {
+        margin-top: -1.5rem; } }
     #page .post-hero .hero-screen {
       position: absolute;
       top: 0;
@@ -951,5 +954,38 @@ a:focus, a:active:focus {
     box-shadow: 0 0 25px rgba(54, 52, 76, 0.2); }
 .article-header.search .searchform .search-input-group button {
   width: 34px; }
+
+.cm-s-material.CodeMirror {
+  background-color: #36344c !important;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px; }
+.cm-s-material .CodeMirror-panel {
+  background-color: #2d2c40; }
+.cm-s-material .CodeMirror-gutters {
+  background-color: #36344c !important;
+  color: #8d8ea5 !important; }
+.cm-s-material .CodeMirror-linenumber {
+  color: #8d8ea5 !important; }
+.cm-s-material .CodeMirror-lines {
+  padding: 12px 0; }
+.cm-s-material .CodeMirror-line {
+  padding: 2px 10px; }
+
+.code-tabs {
+  background-color: #1a182d;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border: none; }
+  .code-tabs .nav-link {
+    border: none;
+    color: #8d8ea5;
+    -webkit-transition: color 0.2s ease-in-out;
+    -moz-transition: color 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out;
+    -o-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out; }
+    .code-tabs .nav-link:hover, .code-tabs .nav-link:focus, .code-tabs .nav-link:active, .code-tabs .nav-link:active:focus, .code-tabs .nav-link.active {
+      color: #ffffff;
+      background-color: transparent; }
 
 /*# sourceMappingURL=style.css.map */
