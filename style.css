@@ -732,7 +732,7 @@ a:focus, a:active:focus {
   display: flex;
   flex-flow: column wrap; }
   #page article {
-    flex: 1; }
+    flex: 1 0 auto; }
   @media only screen and (max-width: 992px) {
     #page {
       padding-top: 1.5rem; } }

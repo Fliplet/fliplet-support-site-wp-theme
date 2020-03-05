@@ -5,7 +5,7 @@
   flex-flow: column wrap;
 
   article {
-    flex: 1;
+    flex: 1 0 auto;
   }
 
   @include below(992px) {
