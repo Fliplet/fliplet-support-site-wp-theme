@@ -6,6 +6,17 @@
 
   article {
     flex: 1 0 auto;
+
+    &.post {
+      h1 {
+        font-size: 32px;
+      }
+
+      .title-subtitle {
+        font-size: 24px;
+        color: $primary-dark-color;
+      }
+    }
   }
 
   @include below(992px) {
@@ -157,6 +168,12 @@
       color: #ffffff;
 
       h1 {
+        font-size: 32px;
+        color: #ffffff;
+      }
+
+      .title-subtitle {
+        font-size: 24px;
         color: #ffffff;
       }
     }
@@ -168,6 +185,49 @@
 
   .post-content {
     margin-top: 3rem;
+  }
+
+  .entry-footer {
+    padding-top: 3rem;
+
+    a {
+      margin-right: 20px;
+    }
+
+    a:last-child {
+      margin-right: 0;
+    }
+
+    @include above(1200px) {
+      display: flex;
+      flex-flow: column wrap;
+      position: fixed;
+      top: calc(#{$navbar-height} + 3rem);
+      left: 3rem;
+      z-index: 1;
+      padding: 0;
+
+      a {
+        margin-right: 0;
+        margin-bottom: 40px;
+
+        &.need-help {
+          max-width: fit-content;
+        }
+      }
+  
+      a:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    @include below(421px) {
+      a {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
   }
 
   .pagination-holder {
@@ -295,6 +355,24 @@
             font-size: 12px;
           }
         }
+      }
+    }
+  }
+
+  .pre-requisites {
+    background-color: $default-color;
+    padding: 1.25rem;
+    color: $primary-dark-color;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.admin-bar {
+  #page {
+    .entry-footer {
+      @include above(1200px) {
+        top: calc(#{$navbar-height} + 3rem + 32px);
       }
     }
   }

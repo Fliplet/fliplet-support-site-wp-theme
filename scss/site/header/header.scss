@@ -117,13 +117,13 @@
           @include transition(color 0.2s ease-in-out);
 
           &:hover {
-            color: $primary-color;
+            color: $menu-links;
           }
         }
 
         &.active {
           .nav-link{
-            color: $primary-color;
+            color: $menu-links;
           }
         }
       }

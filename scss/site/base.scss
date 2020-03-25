@@ -96,3 +96,28 @@ h6 {
 	width: 1px;
 	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
 }
+
+ol,
+ul {
+  li {
+    position: relative;
+    margin-bottom: 8px;
+  }
+}
+
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+
+  li {
+    counter-increment: my-awesome-counter;
+
+    &:before {
+      content: counter(my-awesome-counter) ". ";
+      position: absolute;
+      left: -40px;
+      width: 30px;
+      text-align: right;
+    }
+  }
+}

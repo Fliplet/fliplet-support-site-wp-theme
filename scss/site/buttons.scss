@@ -5,6 +5,20 @@
   line-height: 1.25;
   font-weight: 600;
   outline: none !important;
+
+  i {
+    margin-right: 5px;
+  }
+
+  &.flex {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &.fit-content {
+    max-width: fit-content;
+  }
 }
 
 .btn-default {
