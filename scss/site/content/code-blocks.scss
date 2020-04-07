@@ -1,12 +1,21 @@
 .cm-s-material {
   &.CodeMirror {
     background-color: $dark-bg-color !important;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-radius: 10px;
+    font-size: 18px;
   }
 
   .CodeMirror-panel {
     background-color: darken($dark-bg-color, 4%);
+    padding: .5rem 1rem;
+
+    .info-panel {
+      .language {
+        font-family: 'Muli', sans-serif;
+        background: transparent !important;
+        padding: 4px 0;
+      }
+    }
   }
 
   .CodeMirror-gutters {
@@ -23,7 +32,31 @@
   }
 
   .CodeMirror-line {
+    font-size: 18px;
     padding: 2px 10px;
+  }
+
+  .control-panel {
+    .tool {
+      b {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.tab-content {
+  .cm-s-material {
+    &.CodeMirror {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+  }
+}
+
+.code-block {
+  @include above(1200px) {
+    margin-bottom: 34px;
   }
 }
 
@@ -32,6 +65,10 @@
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   border: none;
+
+  @include above(1200px) {
+    margin-top: 34px;
+  }
 
   .nav-link {
     border: none;

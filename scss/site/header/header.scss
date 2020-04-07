@@ -113,6 +113,7 @@
           padding: 0 15px;
           text-transform: uppercase;
           font-size: 13px;
+          font-weight: normal;
 
           @include transition(color 0.2s ease-in-out);
 
@@ -124,6 +125,7 @@
         &.active {
           .nav-link{
             color: $menu-links;
+            font-weight: normal;
           }
         }
       }

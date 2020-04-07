@@ -26,6 +26,7 @@
 
         a {
           color: $text-color;
+          font-weight: normal;
 
           @include transition(color 0.2s ease-in-out);
 
@@ -55,5 +56,9 @@
       width: 100%;
       padding: 4vh 15px;
     }
+  }
+
+  @include above(1200px) {
+    margin-top: 100px;
   }
 }

@@ -1,7 +1,7 @@
 $menu-links: #23d5ff !default;
 $primary-color: #00abd1 !default;
 $primary-dark-color: #474974 !default;
-$default-color: #eae9ec !default;
+$default-color: #dbdde5 !default;
 $info-color: #0c86e9 !default;
 $success-color: #19cd9d !default;
 $warning-color: #ed9119 !default;
@@ -9,15 +9,16 @@ $danger-color: #e03629 !default;
 $light-grey: #96a8bf !default;
 $light-bg-color: #f8f6f7;
 $darker-bg-color: #1a182d !default;
-$dark-bg-color: #36344c !default;
+$dark-bg-color: #36344b !default;
 $text-color: #8d8ea5 !default;
+$secondary-text-color: #474974 !default;
 
 $btn-primary-bg: $primary-color !default;
 $btn-primary-color: #ffffff !default;
 $btn-secondary-bg: $primary-dark-color !default;
 $btn-secondary-color: #ffffff !default;
 $btn-default-bg: $default-color !default;
-$btn-default-color: rgba($dark-bg-color, 0.75) !default;
+$btn-default-color: $secondary-text-color !default;
 $btn-info-bg: $info-color !default;
 $btn-info-color: #ffffff !default;
 $btn-success-bg: $success-color !default;

@@ -31,6 +31,10 @@ body {
   color: $text-color;
   font-weight: 400;
   background-color: $light-bg-color;
+
+  @include above(1200px) {
+    font-size: 1.15rem;
+  }
 }
 
 img {
@@ -40,6 +44,10 @@ img {
 
 p {
   line-height: 1.6;
+
+  @include above(1200px) {
+    font-size: 1.15rem;
+  }
 }
 
 h1,
@@ -50,7 +58,7 @@ h5,
 h6 {
   color: $primary-dark-color;
   font-weight: 700;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 h1 {
@@ -120,4 +128,16 @@ ol {
       text-align: right;
     }
   }
+}
+
+b,
+strong {
+  color: $secondary-text-color;
+}
+
+code {
+  color: #ffffff;
+  background-color: $dark-bg-color;
+  border-radius: 5px;
+  padding: 5px 8px;
 }
