@@ -320,6 +320,11 @@
 
       .image-holder {
         text-align: center;
+        margin-bottom: 20px;
+
+        img {
+          max-width: 100px;
+        }
       }
 
       i {

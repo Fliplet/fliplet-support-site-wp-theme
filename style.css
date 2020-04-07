@@ -972,7 +972,10 @@ a:focus, a:active:focus {
     #page .front-page-wrapper .front-page-column {
       margin-bottom: 30px; }
       #page .front-page-wrapper .front-page-column .image-holder {
-        text-align: center; }
+        text-align: center;
+        margin-bottom: 20px; }
+        #page .front-page-wrapper .front-page-column .image-holder img {
+          max-width: 100px; }
       #page .front-page-wrapper .front-page-column i {
         font-weight: bold;
         color: #00abd1;
