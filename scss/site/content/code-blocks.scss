@@ -1,9 +1,7 @@
-.cm-s-material {
-  &.CodeMirror {
-    background-color: $dark-bg-color !important;
-    border-radius: 10px;
-    font-size: 18px;
-  }
+.CodeMirror {
+  background-color: $dark-bg-color !important;
+  border-radius: 10px;
+  font-size: 18px;
 
   .CodeMirror-panel {
     background-color: darken($dark-bg-color, 4%);

@@ -1159,29 +1159,29 @@ a:focus, a:active:focus {
 .article-header.search .searchform .search-input-group button {
   width: 34px; }
 
-.cm-s-material.CodeMirror {
+.CodeMirror {
   background-color: #36344b !important;
   border-radius: 10px;
   font-size: 18px; }
-.cm-s-material .CodeMirror-panel {
-  background-color: #2d2c3f;
-  padding: .5rem 1rem; }
-  .cm-s-material .CodeMirror-panel .info-panel .language {
-    font-family: 'Muli', sans-serif;
-    background: transparent !important;
-    padding: 4px 0; }
-.cm-s-material .CodeMirror-gutters {
-  background-color: #36344b !important;
-  color: #8d8ea5 !important; }
-.cm-s-material .CodeMirror-linenumber {
-  color: #8d8ea5 !important; }
-.cm-s-material .CodeMirror-lines {
-  padding: 12px 0; }
-.cm-s-material .CodeMirror-line {
-  font-size: 18px;
-  padding: 2px 10px; }
-.cm-s-material .control-panel .tool b {
-  color: #ffffff; }
+  .CodeMirror .CodeMirror-panel {
+    background-color: #2d2c3f;
+    padding: .5rem 1rem; }
+    .CodeMirror .CodeMirror-panel .info-panel .language {
+      font-family: 'Muli', sans-serif;
+      background: transparent !important;
+      padding: 4px 0; }
+  .CodeMirror .CodeMirror-gutters {
+    background-color: #36344b !important;
+    color: #8d8ea5 !important; }
+  .CodeMirror .CodeMirror-linenumber {
+    color: #8d8ea5 !important; }
+  .CodeMirror .CodeMirror-lines {
+    padding: 12px 0; }
+  .CodeMirror .CodeMirror-line {
+    font-size: 18px;
+    padding: 2px 10px; }
+  .CodeMirror .control-panel .tool b {
+    color: #ffffff; }
 
 .tab-content .cm-s-material.CodeMirror {
   border-top-left-radius: 0;
