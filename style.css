@@ -1002,7 +1002,12 @@ a:focus, a:active:focus {
     #page .control-holder .btn + .btn {
       margin-left: 10px; }
   #page .front-page-wrapper {
-    margin-top: 4rem; }
+    margin-top: 2rem; }
+    #page .front-page-wrapper + .front-page-wrapper {
+      margin-top: 0; }
+    @media only screen and (min-width: 1201px) {
+      #page .front-page-wrapper {
+        margin-top: 100px; } }
     #page .front-page-wrapper .front-page-column {
       margin-bottom: 30px; }
       #page .front-page-wrapper .front-page-column .image-holder {
