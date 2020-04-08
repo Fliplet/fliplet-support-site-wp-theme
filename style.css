@@ -1161,6 +1161,7 @@ a:focus, a:active:focus {
 
 .CodeMirror {
   background-color: #36344b !important;
+  color: #dbdde5 !important;
   border-radius: 10px;
   font-size: 18px; }
   .CodeMirror .CodeMirror-panel {
