@@ -810,6 +810,7 @@ a:focus, a:active:focus {
     margin: 30px -15px 0;
     display: flex; }
     #page .code-library-menu li {
+      width: 50%;
       position: relative;
       padding: 0 15px;
       text-align: left;
