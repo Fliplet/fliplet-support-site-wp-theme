@@ -3,6 +3,7 @@
   color: $default-color !important;
   border-radius: 10px;
   font-size: 18px;
+  font-family: 'PT Mono', monospace;
 
   .CodeMirror-panel {
     background-color: darken($dark-bg-color, 4%);

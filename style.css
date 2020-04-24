@@ -7,7 +7,7 @@ Requires at least: WordPress 4.9.6
 Version: 1.0
 */
 /* Site components */
-@import url("https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700|Open+Sans:300,400,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&family=PT+Mono&display=swap");
 ::-moz-selection {
   background: #36344b;
   color: #ffffff; }
@@ -117,6 +117,7 @@ strong {
   color: #474974; }
 
 code {
+  font-family: 'PT Mono', monospace;
   color: #ffffff;
   background-color: #36344b;
   border-radius: 5px;
@@ -808,14 +809,16 @@ a:focus, a:active:focus {
     list-style: none;
     padding: 0;
     margin: 30px -15px 0;
-    display: flex; }
+    display: flex;
+    justify-content: center; }
     #page .code-library-menu li {
-      width: 50%;
       position: relative;
-      padding: 0 15px;
+      padding: 0 30px;
       text-align: left;
-      margin: 0; }
+      margin: 0;
+      text-align: center; }
       #page .code-library-menu li a {
+        position: relative;
         color: #8d8ea5;
         -webkit-transition: color 0.2s ease-in-out;
         -moz-transition: color 0.2s ease-in-out;
@@ -824,21 +827,21 @@ a:focus, a:active:focus {
         transition: color 0.2s ease-in-out; }
         #page .code-library-menu li a:hover {
           color: #00abd1; }
-      #page .code-library-menu li:after {
-        position: absolute;
-        left: 0;
-        top: 5px;
-        content: "\e947";
-        font-family: 'fl-icon-studio' !important;
-        speak: none;
-        font-style: normal;
-        font-weight: 700;
-        font-variant: normal;
-        text-transform: none;
-        line-height: 1;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        color: #00abd1; }
+        #page .code-library-menu li a:after {
+          position: absolute;
+          left: -15px;
+          top: 2px;
+          content: "\e947";
+          font-family: 'fl-icon-studio' !important;
+          speak: none;
+          font-style: normal;
+          font-weight: 700;
+          font-variant: normal;
+          text-transform: none;
+          line-height: 1;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          color: #00abd1; }
   #page .category-list {
     padding: 0;
     list-style: none;
@@ -872,19 +875,27 @@ a:focus, a:active:focus {
   #page .post-list {
     padding-top: 30px; }
     #page .post-list .article-card .card {
+      height: calc(100% - 30px);
       margin-bottom: 30px; }
-    #page .post-list .card-body .card-title {
-      margin: 5px 0; }
-    #page .post-list .card-body p {
-      margin: 0; }
-    #page .post-list .card-body .pseudo-link {
-      color: #8d8ea5; }
-      #page .post-list .card-body .pseudo-link:hover, #page .post-list .card-body .pseudo-link:focus, #page .post-list .card-body .pseudo-link:active, #page .post-list .card-body .pseudo-link:active:hover, #page .post-list .card-body .pseudo-link:active:focus {
-        color: #8d8ea5; }
-    #page .post-list .card-body .btn {
-      font-size: .8rem;
-      margin-top: 16px;
-      padding: .5rem 1rem; }
+    #page .post-list .card-body {
+      display: flex;
+      flex-flow: column wrap; }
+      #page .post-list .card-body .card-inner-body {
+        flex: 1 1 auto; }
+        #page .post-list .card-body .card-inner-body .card-title {
+          margin: 5px 0; }
+        #page .post-list .card-body .card-inner-body p {
+          margin: 0; }
+        #page .post-list .card-body .card-inner-body .pseudo-link {
+          color: #8d8ea5; }
+          #page .post-list .card-body .card-inner-body .pseudo-link:hover, #page .post-list .card-body .card-inner-body .pseudo-link:focus, #page .post-list .card-body .card-inner-body .pseudo-link:active, #page .post-list .card-body .card-inner-body .pseudo-link:active:hover, #page .post-list .card-body .card-inner-body .pseudo-link:active:focus {
+            color: #8d8ea5; }
+          #page .post-list .card-body .card-inner-body .pseudo-link p {
+            font-weight: normal; }
+      #page .post-list .card-body .btn {
+        font-size: .8rem;
+        margin-top: 16px;
+        padding: .5rem 1rem; }
   #page .post-categories {
     list-style: none;
     padding: 0;
@@ -903,6 +914,8 @@ a:focus, a:active:focus {
         color: #00abd1; }
       #page .post-categories li:last-child:after {
         display: none; }
+    #page .post-categories.post-detail li {
+      font-size: 16px; }
   #page .post-hero {
     position: relative;
     margin-top: -3rem;
@@ -1003,6 +1016,7 @@ a:focus, a:active:focus {
     #page .control-holder .btn + .btn {
       margin-left: 10px; }
   #page .front-page-wrapper {
+    justify-content: space-between;
     margin-top: 2rem; }
     #page .front-page-wrapper + .front-page-wrapper {
       margin-top: 0; }
@@ -1010,6 +1024,8 @@ a:focus, a:active:focus {
       #page .front-page-wrapper {
         margin-top: 100px; } }
     #page .front-page-wrapper .front-page-column {
+      flex: 0 0 30%;
+      max-width: 30%;
       margin-bottom: 30px; }
       #page .front-page-wrapper .front-page-column .image-holder {
         text-align: center;
@@ -1164,7 +1180,8 @@ a:focus, a:active:focus {
   background-color: #36344b !important;
   color: #dbdde5 !important;
   border-radius: 10px;
-  font-size: 18px; }
+  font-size: 18px;
+  font-family: 'PT Mono', monospace; }
   .CodeMirror .CodeMirror-panel {
     background-color: #2d2c3f;
     padding: .5rem 1rem; }

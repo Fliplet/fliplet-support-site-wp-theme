@@ -51,15 +51,17 @@
     padding: 0;
     margin: 30px -15px 0;
     display: flex;
+    justify-content: center;
 
     li {
-      width: 50%;
       position: relative;
-      padding: 0 15px;
+      padding: 0 30px;
       text-align: left;
       margin: 0;
+      text-align: center;
 
       a {
+        position: relative;
         color: $text-color;
 
         @include transition(color 0.2s ease-in-out);
@@ -67,23 +69,23 @@
         &:hover {
           color: $primary-color;
         }
-      }
 
-      &:after {
-        position: absolute;
-        left: 0;
-        top: 5px;
-        content: "\e947";
-        font-family: 'fl-icon-studio' !important;
-        speak: none;
-        font-style: normal;
-        font-weight: 700;
-        font-variant: normal;
-        text-transform: none;
-        line-height: 1;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        color: $primary-color;
+        &:after {
+          position: absolute;
+          left: -15px;
+          top: 2px;
+          content: "\e947";
+          font-family: 'fl-icon-studio' !important;
+          speak: none;
+          font-style: normal;
+          font-weight: 700;
+          font-variant: normal;
+          text-transform: none;
+          line-height: 1;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          color: $primary-color;
+        }
       }
     }
   }
@@ -131,28 +133,40 @@
 
     .article-card {
       .card {
+        height: calc(100% - 30px);
         margin-bottom: 30px;
       }
     }
 
     .card-body {
-      .card-title {
-        margin: 5px 0;
-      }
+      display: flex;
+      flex-flow: column wrap;
 
-      p {
-        margin: 0;
-      }
+      .card-inner-body {
+        flex: 1 1 auto;
 
-      .pseudo-link {
-        color: $text-color;
+        .card-title {
+          margin: 5px 0;
+        }
 
-        &:hover,
-        &:focus,
-        &:active,
-        &:active:hover,
-        &:active:focus {
+        p {
+          margin: 0;
+        }
+
+        .pseudo-link {
           color: $text-color;
+
+          &:hover,
+          &:focus,
+          &:active,
+          &:active:hover,
+          &:active:focus {
+            color: $text-color;
+          }
+
+          p {
+            font-weight: normal;
+          }
         }
       }
 
@@ -188,6 +202,12 @@
         &:after {
           display: none;
         }
+      }
+    }
+
+    &.post-detail {
+      li {
+        font-size: 16px;
       }
     }
   }
@@ -355,6 +375,7 @@
   }
 
   .front-page-wrapper {
+    justify-content: space-between;
     margin-top: 2rem;
 
     + .front-page-wrapper {
@@ -366,6 +387,8 @@
     }
 
     .front-page-column {
+      flex: 0 0 30%;
+      max-width: 30%;
       margin-bottom: 30px;
 
       .image-holder {
