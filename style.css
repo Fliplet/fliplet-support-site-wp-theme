@@ -7,7 +7,7 @@ Requires at least: WordPress 4.9.6
 Version: 1.0
 */
 /* Site components */
-@import url("https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&family=PT+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&family=Inconsolata&display=swap");
 ::-moz-selection {
   background: #36344b;
   color: #ffffff; }
@@ -117,7 +117,7 @@ strong {
   color: #474974; }
 
 code {
-  font-family: 'PT Mono', monospace;
+  font-family: 'Inconsolata', monospace;
   color: #ffffff;
   background-color: #36344b;
   border-radius: 5px;
@@ -1181,7 +1181,7 @@ a:focus, a:active:focus {
   color: #dbdde5 !important;
   border-radius: 10px;
   font-size: 18px;
-  font-family: 'PT Mono', monospace; }
+  font-family: 'Inconsolata', monospace; }
   .CodeMirror .CodeMirror-panel {
     background-color: #2d2c3f;
     padding: .5rem 1rem; }

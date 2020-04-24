@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&family=PT+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&family=Inconsolata&display=swap');
 
 ::-moz-selection {
   background: $dark-bg-color;
@@ -136,7 +136,7 @@ strong {
 }
 
 code {
-  font-family: 'PT Mono', monospace;
+  font-family: 'Inconsolata', monospace;
   color: #ffffff;
   background-color: $dark-bg-color;
   border-radius: 5px;
