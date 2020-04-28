@@ -15,13 +15,12 @@
   <h3 class="search-result-title">
     <a href="<?php the_permalink();?>"><?php the_title();?></a>
   </h3>
-  <p class="search-result-slug">
-    <a href="<?php the_permalink();?>"><?php the_permalink();?></a>
-  </p>
+  <?php if (has_category()) : ?>
   <div class="search-result-categories">
     <span>Categories:</span>
     <?php the_category();?>
   </div>
+  <?php endif; ?>
   <?php the_excerpt();?>
 </div>
 
