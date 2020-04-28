@@ -471,7 +471,8 @@
   }
 }
 
-.blog {
+.blog,
+.archive {
   #page {
     .container-lg {
       @include above(1200px) {

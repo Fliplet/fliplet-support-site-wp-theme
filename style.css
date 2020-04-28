@@ -1083,7 +1083,8 @@ a:focus, a:active:focus {
     top: calc(50px + 3rem + 32px); } }
 
 @media only screen and (min-width: 1201px) {
-  .blog #page .container-lg {
+  .blog #page .container-lg,
+  .archive #page .container-lg {
     max-width: 1540px; } }
 
 .site-footer {
