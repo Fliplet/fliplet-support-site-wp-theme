@@ -1087,6 +1087,9 @@ a:focus, a:active:focus {
   .archive #page .container-lg {
     max-width: 1540px; } }
 
+.single h2 {
+  margin-top: 40px; }
+
 .site-footer {
   display: flex;
   background-color: #36344b;
