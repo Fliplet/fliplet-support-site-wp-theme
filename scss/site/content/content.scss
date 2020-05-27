@@ -472,7 +472,8 @@
 }
 
 .blog,
-.archive {
+.archive,
+.page-template-page-help {
   #page {
     .container-lg {
       @include above(1200px) {

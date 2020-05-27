@@ -21,14 +21,8 @@ $isCurrentCategory = $foundCategory;
   <li class="cat-item <?php echo is_category() ? '' : 'current-cat' ?>">
     <a aria-current="page" href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>">All</a>
   </li>
-  <?php
-  $category_id;
-
-  if (is_category()) {
-    $cat = get_query_var('cat');
-    $this_category = get_category($cat);
-    $category_id = $this_category->category_parent;
-  }
+  <?php 
+  $category_id = get_code_library_category_id();
 
   wp_list_categories(array(
     'hide_empty' => 0,

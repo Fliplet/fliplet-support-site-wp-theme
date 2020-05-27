@@ -1084,7 +1084,8 @@ a:focus, a:active:focus {
 
 @media only screen and (min-width: 1201px) {
   .blog #page .container-lg,
-  .archive #page .container-lg {
+  .archive #page .container-lg,
+  .page-template-page-help #page .container-lg {
     max-width: 1540px; } }
 
 .single h2 {
