@@ -65,6 +65,7 @@
 
   <?php wp_footer(); ?>
 
+  <?php /* Intercom setup */ ?>
   <script>
     window.intercomSettings = {
       app_id: "eo99qllm",
