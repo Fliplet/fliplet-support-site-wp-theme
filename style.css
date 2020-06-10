@@ -1030,9 +1030,11 @@ a:focus, a:active:focus {
       #page .front-page-wrapper {
         margin-top: 100px; } }
     #page .front-page-wrapper .front-page-column {
-      flex: 0 0 30%;
-      max-width: 30%;
       margin-bottom: 30px; }
+      @media only screen and (min-width: 768px) {
+        #page .front-page-wrapper .front-page-column {
+          flex: 0 0 30%;
+          max-width: 30%; } }
       #page .front-page-wrapper .front-page-column .image-holder {
         text-align: center;
         margin-bottom: 20px; }

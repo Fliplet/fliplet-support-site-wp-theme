@@ -391,9 +391,12 @@
     }
 
     .front-page-column {
-      flex: 0 0 30%;
-      max-width: 30%;
       margin-bottom: 30px;
+
+      @include above(767px) {
+        flex: 0 0 30%;
+        max-width: 30%;
+      }
 
       .image-holder {
         text-align: center;
