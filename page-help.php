@@ -1,13 +1,10 @@
 <?php
 /**
- * The main template file
+ * Template Name: Help center
+ * 
+ * The template for displaying all single posts
  *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
  * @package Fliplet
  * @subpackage Fliplet_Support
@@ -18,7 +15,7 @@ get_header();
 ?>
 
 <?php
-$category_id = get_code_library_category_id();
+$category_id = get_help_library_category_id();
 
 $args = [
   'tax_query' => array(
@@ -35,11 +32,11 @@ $q = new WP_Query( $args );
 
 <article class="<?php echo is_full_width_template() ? 'container-fluid' : 'container-lg' ?>">
 
-<?php get_template_part('template-parts/content/article', 'header'); ?>
+<?php get_template_part('template-parts/content/article', 'header-help'); ?>
 
 <hr>
 
-<?php get_template_part('template-parts/content/content', 'categories-code'); ?>
+<?php get_template_part('template-parts/content/content', 'categories-help'); ?>
 
 <?php if ($q->have_posts()) : ?>
 <div class="row post-list">

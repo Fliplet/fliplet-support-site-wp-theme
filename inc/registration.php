@@ -12,6 +12,7 @@ register_nav_menus(
   array(
 		'top-menu' => __('Top Menu', 'theme'),
 		'code-library-menu' => __('Code Library Intro Menu', 'theme'),
+		'help-center-menu' => __('Help Center Intro Menu', 'theme'),
 		'footer-menu-company' => __('Footer Company Menu', 'theme'),
 		'footer-menu-product' => __('Footer Product Links Menu', 'theme'),
 		'footer-menu-resources' => __('Footer Resources Menu', 'theme')
@@ -23,6 +24,15 @@ add_image_size('small', '300', '300', true);
 add_image_size('medium', '500', '500', true);
 add_image_size('large', '800', '800', true);
 
+function wpb_search_filter($query) {
+	if ($query->is_search) {
+		$query->set('post_type', 'post');
+	}
+
+	return $query;
+}
+
+add_filter('pre_get_posts','wpb_search_filter');
 
 function is_full_width_template() {
   $full_width_templates = array(
@@ -74,4 +84,12 @@ function bootstrap_pagination( \WP_Query $wp_query = null, $echo = true ) {
 	}
 
 	return null;
+}
+
+function get_code_library_category_id() {
+	return get_cat_ID('Code library');
+}
+
+function get_help_library_category_id() {
+	return get_cat_ID('Help library');
 }

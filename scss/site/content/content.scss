@@ -46,7 +46,8 @@
     }
   }
 
-  .code-library-menu {
+  .code-library-menu,
+  .help-center-menu {
     list-style: none;
     padding: 0;
     margin: 30px -15px 0;
@@ -214,7 +215,7 @@
 
   .post-hero {
     position: relative;
-    margin-top: -3rem;
+    margin-top: -6.3rem;
     padding: 6rem 0;
     height: 40vh;
     background-repeat: no-repeat;
@@ -391,9 +392,12 @@
     }
 
     .front-page-column {
-      flex: 0 0 30%;
-      max-width: 30%;
       margin-bottom: 30px;
+
+      @include above(767px) {
+        flex: 0 0 30%;
+        max-width: 30%;
+      }
 
       .image-holder {
         text-align: center;
@@ -472,7 +476,8 @@
 }
 
 .blog,
-.archive {
+.archive,
+.page-template-page-help {
   #page {
     .container-lg {
       @include above(1200px) {
