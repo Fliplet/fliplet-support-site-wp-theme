@@ -46,7 +46,8 @@
     }
   }
 
-  .code-library-menu {
+  .code-library-menu,
+  .help-center-menu {
     list-style: none;
     padding: 0;
     margin: 30px -15px 0;
@@ -214,7 +215,7 @@
 
   .post-hero {
     position: relative;
-    margin-top: -3rem;
+    margin-top: -6.3rem;
     padding: 6rem 0;
     height: 40vh;
     background-repeat: no-repeat;

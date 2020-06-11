@@ -12,6 +12,7 @@ register_nav_menus(
   array(
 		'top-menu' => __('Top Menu', 'theme'),
 		'code-library-menu' => __('Code Library Intro Menu', 'theme'),
+		'help-center-menu' => __('Help Center Intro Menu', 'theme'),
 		'footer-menu-company' => __('Footer Company Menu', 'theme'),
 		'footer-menu-product' => __('Footer Product Links Menu', 'theme'),
 		'footer-menu-resources' => __('Footer Resources Menu', 'theme')

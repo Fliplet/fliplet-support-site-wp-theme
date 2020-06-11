@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Help library
+ * Template Name: Help center
  * 
  * The template for displaying all single posts
  *

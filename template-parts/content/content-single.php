@@ -39,7 +39,16 @@
 </div>
 
 <footer class="entry-footer">
-  <?php flipletsupport_entry_footer(); ?>
+  <?php
+  $category = get_the_category(); 
+  $category_parent_id = $category[0]->category_parent;
+
+  if ($category_parent_id != get_help_library_category_id()) {
+    flipletsupport_entry_footer();
+  } else {
+    flipletsupport_entry_footer_help();
+  }
+  ?>
 </footer>
 
 </article>
