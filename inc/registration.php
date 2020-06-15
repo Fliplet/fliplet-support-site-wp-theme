@@ -24,6 +24,22 @@ add_image_size('small', '300', '300', true);
 add_image_size('medium', '500', '500', true);
 add_image_size('large', '800', '800', true);
 
+function allow_post_tags( $allowedposttags ){
+	$allowedposttags['iframe'] = array(
+		'src' => true,
+		'width' => true,
+		'height' => true,
+		'class' => true,
+		'frameborder' => true,
+		'webkitAllowFullScreen' => true,
+		'mozallowfullscreen' => true,
+		'allowFullScreen' => true,
+		'style' => true
+	);
+
+	return $allowedposttags;
+}
+
 function wpb_search_filter($query) {
 	if ($query->is_search) {
 		$query->set('post_type', 'post');
@@ -32,6 +48,7 @@ function wpb_search_filter($query) {
 	return $query;
 }
 
+add_filter('wp_kses_allowed_html','allow_post_tags', 1);
 add_filter('pre_get_posts','wpb_search_filter');
 
 function is_full_width_template() {
