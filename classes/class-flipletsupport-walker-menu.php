@@ -12,7 +12,24 @@ class Nav_Menu_Walker_Bootstrap extends Walker_Nav_Menu {
   public function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0) {
     $class_names = $value = 'nav-item';
     $classes = empty($item->classes) ? array() : (array) $item->classes;
-    $class_names = in_array("current_page_item", $item->classes) || ($item->type == 'post_type' && is_category()) ? ' active' : '';
+
+    $category_id;
+    $isHelpLibrary;
+    $isCodeLibrary;
+
+    if (is_category()) {
+      $cat = get_query_var('cat');
+      $this_category = get_category($cat);
+      $category_id = $this_category->category_parent;
+    }
+
+    if ($category_id == get_help_library_category_id()) {
+      $isHelpLibrary = $item->object_id == get_page_by_title( 'Help center' )->ID;
+    } else if ($category_id == get_code_library_category_id()) {
+      $isCodeLibrary = $item->object_id == get_page_by_title( 'Code library' )->ID;
+    }
+
+    $class_names = in_array("current_page_item", $item->classes) || $isHelpLibrary || $isCodeLibrary ? ' active' : '';
 
     $output .= '<li id="menu-item-' . $item->ID . '" class="' . $value . $class_names . '">';
     $attributes = '';

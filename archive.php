@@ -14,11 +14,33 @@ get_header();
 
 <article class="<?php echo is_full_width_template() ? 'container-fluid' : 'container-lg' ?>">
 
-<?php get_template_part('template-parts/content/article', 'header'); ?>
+<?php
+$category_id;
+
+if (is_category()) {
+  $cat = get_query_var('cat');
+  $this_category = get_category($cat);
+  $category_id = $this_category->category_parent;
+}
+?>
+
+<?php
+if ($category_id == get_help_library_category_id()) {
+  get_template_part('template-parts/content/article', 'header-help');
+} else {
+  get_template_part('template-parts/content/article', 'header');
+}
+?>
 
 <hr>
 
-<?php get_template_part('template-parts/content/content', 'categories'); ?>
+<?php
+if ($category_id == get_help_library_category_id()) {
+  get_template_part('template-parts/content/content', 'categories-help');
+} else {
+  get_template_part('template-parts/content/content', 'categories');
+}
+?>
 
 <?php if (have_posts()) : ?>
 <div class="row post-list">
