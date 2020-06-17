@@ -19,7 +19,7 @@ $isCurrentCategory = $foundCategory;
 
 <ul class="category-list">
   <li class="cat-item <?php echo is_category() ? '' : 'current-cat' ?>">
-    <a aria-current="page" href="<?php echo esc_url( get_permalink( get_page_by_title( 'Help center' ) ) ); ?>">All</a>
+    <a aria-current="page" href="<?php echo esc_url( get_permalink( get_page_by_title( 'Help Center' ) ) ); ?>">All</a>
   </li>
   <?php 
   $category_id = get_help_library_category_id();

@@ -22,9 +22,7 @@ if (is_category()) {
   $this_category = get_category($cat);
   $category_id = $this_category->category_parent;
 }
-?>
 
-<?php
 if ($category_id == get_help_library_category_id()) {
   get_template_part('template-parts/content/article', 'header-help');
 } else {

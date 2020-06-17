@@ -1014,6 +1014,10 @@ a:focus, a:active:focus {
         margin: 0; }
         #page .search-result-list .result-details .search-result-slug a {
           color: rgba(141, 142, 165, 0.6); }
+      #page .search-result-list .result-details .search-result-from {
+        margin-top: 2px;
+        margin-bottom: 8px;
+        font-size: 12px; }
       #page .search-result-list .result-details .search-result-categories {
         display: flex;
         align-items: baseline;

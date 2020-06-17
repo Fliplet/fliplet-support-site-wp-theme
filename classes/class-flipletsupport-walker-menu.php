@@ -24,7 +24,7 @@ class Nav_Menu_Walker_Bootstrap extends Walker_Nav_Menu {
     }
 
     if ($category_id == get_help_library_category_id()) {
-      $isHelpLibrary = $item->object_id == get_page_by_title( 'Help center' )->ID;
+      $isHelpLibrary = $item->object_id == get_page_by_title( 'Help Center' )->ID;
     } else if ($category_id == get_code_library_category_id()) {
       $isCodeLibrary = $item->object_id == get_page_by_title( 'Code library' )->ID;
     }

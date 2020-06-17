@@ -54,8 +54,8 @@ if ( ! function_exists( 'flipletsupport_entry_footer_help' ) ) :
 		printf(
 			/* translators: 1: SVG icon. 2: Posted in label, only visible to screen readers. 3: List of categories. */
 			'<a href="%1$s" class="btn btn-default flex"><i class="fl-icon-chevron-left-2"></i> %2$s</a>',
-			esc_url( get_permalink( get_page_by_title( 'Help center' ) ) ),
-			__( 'Help center home', 'flipletsupport' )
+			esc_url( get_permalink( get_page_by_title( 'Help Center' ) ) ),
+			__( 'Help Center Home', 'flipletsupport' )
 		); // WPCS: XSS OK.
 
 		printf(
