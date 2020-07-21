@@ -22,6 +22,17 @@ jQuery.noConflict();
       })
     }
 
+    function addResponsiveWrapperToIframes() {
+      $('iframe').each(function () {
+        if ($(this).parent('.embed-responsive').length) {
+          return;
+        }
+
+        $(this).wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
+      });
+    }
+
     attachBootstrapHandlers();
+    addResponsiveWrapperToIframes();
   });
 })(jQuery);
