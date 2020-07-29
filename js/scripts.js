@@ -24,7 +24,9 @@ jQuery.noConflict();
 
     function addResponsiveWrapperToIframes() {
       $('iframe').each(function () {
-        if ($(this).parent('.embed-responsive').length) {
+        var hasSource = $(this).attr('src');
+
+        if ($(this).parent('.embed-responsive').length || !hasSource) {
           return;
         }
 
