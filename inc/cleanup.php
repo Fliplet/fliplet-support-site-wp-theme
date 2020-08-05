@@ -33,10 +33,4 @@ function fliplet_remove_meta_version() {
 }
 
 add_filter('the_generator', 'fliplet_remove_meta_version');
-
-function remove_the_wpautop() {
-  remove_filter( 'the_content', 'wpautop' );
-}
-
-add_action( 'after_setup_theme', 'remove_the_wpautop' );
 ?>
