@@ -41,6 +41,10 @@ img {
   max-width: 100%;
   height: auto; }
 
+li p img {
+  display: block;
+  margin-top: 1em; }
+
 p {
   line-height: 1.6; }
   @media only screen and (min-width: 1201px) {
@@ -122,6 +126,9 @@ code {
   background-color: #36344b;
   border-radius: 5px;
   padding: 5px 8px; }
+
+.table {
+  color: #8d8ea5; }
 
 button:focus, button:active:focus,
 .btn:focus,
