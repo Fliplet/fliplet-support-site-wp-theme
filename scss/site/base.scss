@@ -42,9 +42,14 @@ img {
   height: auto;
 }
 
-li p img {
+li p img,
+li img {
   display: block;
   margin-top: 1em;
+}
+
+.post img {
+  box-shadow: 10px 10px 40px 0 rgba(0,0,0,0.2);
 }
 
 p {
