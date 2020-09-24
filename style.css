@@ -967,6 +967,39 @@ a:focus, a:active:focus {
     opacity: 0.6; }
   #page .post-content {
     margin-top: 24px; }
+  #page .fliplet-promotion {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 10px 10px 40px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 60px;
+    padding: 20px;
+    overflow: hidden; }
+    @media only screen and (min-width: 769px) {
+      #page .fliplet-promotion {
+        margin-top: 100px;
+        padding: 30px; } }
+    #page .fliplet-promotion h2 {
+      margin: -20px -20px 15px;
+      padding: 20px;
+      background-color: #36344b;
+      color: #ffffff; }
+      @media only screen and (min-width: 769px) {
+        #page .fliplet-promotion h2 {
+          margin: -30px -30px 15px;
+          padding: 30px; } }
+    #page .fliplet-promotion .button-holder {
+      display: flex;
+      flex-flow: row nowrap; }
+      @media only screen and (max-width: 482px) {
+        #page .fliplet-promotion .button-holder {
+          flex-flow: column nowrap; } }
+      #page .fliplet-promotion .button-holder .btn {
+        margin-right: 15px; }
+      @media only screen and (max-width: 482px) {
+        #page .fliplet-promotion .button-holder .btn {
+          margin-right: 0; }
+          #page .fliplet-promotion .button-holder .btn + .btn {
+            margin-top: 15px; } }
   #page .entry-footer {
     padding-top: 3rem; }
     #page .entry-footer a {

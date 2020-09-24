@@ -38,6 +38,15 @@
 <?php the_content(); ?>
 </div>
 
+<div class="fliplet-promotion d-none">
+  <h2>Let us help you build your next app</h2>
+  <p>Fliplet Studio is a prefab app builder, and we help businesses to create and manage custom apps. Our apps combine the ease of use of no-code tools with the feature flexibility of open source software. The chances are we've already built 90% of your app for you. You don't need to hire developers to do it.</p>
+  <div class="button-holder">
+    <a href="https://fliplet.com/prefab-app-builder/" class="btn btn-default" target="_blank">Learn more</a>
+    <a href="https://studio.fliplet.com/signup?utm_source=fliplet&utm_medium=help&utm_campaign=help-article" class="btn btn-primary" target="_blank">CREATE A FREE ACCOUNT</a>
+  </div>
+</div>
+
 <footer class="entry-footer">
   <?php
   $category = get_the_category(); 

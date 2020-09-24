@@ -34,7 +34,50 @@ jQuery.noConflict();
       });
     }
 
+    function checkisUserLoggedIn() {
+      var isUserLoggedIn = Cookies.get('studio-user-logged-in');
+
+      if (typeof isUserLoggedIn !== 'undefined') {
+        if (isUserLoggedIn === 'no') {
+          $('.fliplet-promotion').removeClass('d-none');
+        }
+
+        if (isUserLoggedIn === 'yes') {
+          $('.fliplet-promotion').addClass('d-none');
+        }
+
+        return;
+      }
+
+      $.ajax({
+        method: 'GET',
+        url: 'https://api.fliplet.test/v1/user',
+        xhrFields: {
+          withCredentials: true
+        },
+        success: function (response) {
+          if (!response || !response.user) {
+            Cookies.set('studio-user-logged-in', 'no', { expires: 1 });
+
+            $('.fliplet-promotion').removeClass('d-none');
+
+            return;
+          }
+
+          Cookies.set('studio-user-logged-in', 'yes', { expires: 1 });
+
+          $('.fliplet-promotion').addClass('d-none');
+        },
+        error: function () {
+          Cookies.set('studio-user-logged-in', 'no', { expires: 1 });
+
+          $('.fliplet-promotion').removeClass('d-none');
+        }
+      });
+    }
+
     attachBootstrapHandlers();
     addResponsiveWrapperToIframes();
+    checkisUserLoggedIn();
   });
 })(jQuery);
