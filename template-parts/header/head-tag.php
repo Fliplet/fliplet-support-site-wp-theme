@@ -12,7 +12,6 @@
 ?>
 
 <head>
-  <meta name="description" content="<?php bloginfo('description');?>">
   <meta charset="<?php bloginfo('charset');?>">
   <meta name="viewport" content="width=device-width, initial-sclae=1">
   <?php wp_head();?>
