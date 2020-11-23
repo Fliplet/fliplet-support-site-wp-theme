@@ -54,9 +54,6 @@
           <li>
             <a class="social-ico" href="https://www.linkedin.com/company/flipletapps/" target="_blank" rel="noopener"><img src="<?php echo get_template_directory_uri() . '/images/Linkedin.png'; ?>" alt="Linkedin-1" width="25" height="24"></a>
           </li>
-          <li>
-          <a class="social-ico" href="https://www.facebook.com/Fliplet" target="_blank" rel="noopener"><img src="<?php echo get_template_directory_uri() . '/images/Facebook.png'; ?>" alt="FB" width="25" height="24"></a>
-          </li>
         </ul>
       </div>
     </footer>
